@@ -16,7 +16,10 @@ const uri = process.env.MONGODB_URI;
 
 const app = express();
 
-const allowedOrigins = ["http://localhost:5173", "http://localhost:5174"];
+const allowedOrigins = [
+  "https://zerodha-frontend-six.vercel.app",
+  "https://zerodha-dashboard-ochre.vercel.app",
+];
 
 app.use(
   cors({
