@@ -4,6 +4,7 @@ const bcrypt = require("bcrypt");
 
 const SignupAuth = async (req, res) => {
   try {
+    console.log("Signup request body:", req.body);
     const { username, name, email, password } = req.body;
 
     const existingUser = await User.findOne({ email });
